@@ -1,0 +1,46 @@
+/* ===========================
+   TYPOGRAPHY
+=========================== */
+
+/* Emphasis Utilities - Refined */
+.em-green {
+  color: var(--color-green);
+  font-weight: 600;
+}
+
+.em-amber {
+  color: var(--color-amber);
+  font-weight: 600;
+}
+
+.em-red {
+  color: var(--color-red);
+  font-weight: 600;
+}
+
+.em-dim {
+  color: var(--color-text-dim);
+  font-weight: 400;
+}
+
+/* Label Utilities */
+.label-green {
+  color: var(--color-green);
+}
+
+.label-amber {
+  color: var(--color-amber);
+}
+
+.label-red {
+  color: var(--color-red);
+}
+
+/* Code Syntax Highlighting */
+.code-green {
+  color: var(--color-green);
+}
+
+.code-dim {
+  color: var(--color-text-faint);
+}

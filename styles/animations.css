@@ -1,0 +1,166 @@
+/* ===========================
+   SUBTLE ANIMATIONS
+   Linear-inspired deliberate movement
+=========================== */
+
+/* Keyframe definitions */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-in-right {
+  from {
+    opacity: 0;
+    transform: translateX(-12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes pulse-subtle {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+
+@keyframes float-subtle {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-4px);
+  }
+}
+
+@keyframes float-shape-1 {
+  0%, 100% {
+    transform: rotate(45deg) translate(0, 0);
+  }
+  50% {
+    transform: rotate(45deg) translate(-3px, -8px);
+  }
+}
+
+@keyframes float-shape-2 {
+  0%, 100% {
+    transform: rotate(45deg) translate(0, 0);
+  }
+  50% {
+    transform: rotate(45deg) translate(5px, -6px);
+  }
+}
+
+@keyframes float-shape-3 {
+  0%, 100% {
+    transform: rotate(45deg) translate(0, 0);
+  }
+  50% {
+    transform: rotate(45deg) translate(-4px, 7px);
+  }
+}
+
+@keyframes glow-pulse {
+  0%, 100% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 0.8;
+  }
+}
+
+/* Apply animations to elements */
+.slidev-layout {
+  animation: fade-in 600ms ease-out;
+}
+
+/* Headings get subtle entrance */
+h1 {
+  animation: fade-in-up 800ms ease-out;
+}
+
+h2, h3 {
+  animation: fade-in 700ms ease-out;
+}
+
+/* v-click elements get deliberate timing */
+.slidev-vclick-target {
+  transition: all 400ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Emphasized text gets persistent subtle glow */
+.em-green {
+  position: relative;
+  text-shadow: 0 0 16px rgba(175, 230, 20, 0.25);
+}
+
+.em-amber {
+  position: relative;
+  text-shadow: 0 0 16px rgba(232, 160, 48, 0.25);
+}
+
+.em-red {
+  position: relative;
+  text-shadow: 0 0 16px rgba(217, 79, 61, 0.25);
+}
+
+/* Slide labels get subtle pulse */
+.slide-label {
+  animation: pulse-subtle 3200ms ease-in-out infinite;
+}
+
+/* List items get staggered entrance */
+li {
+  animation: slide-in-right 500ms ease-out backwards;
+}
+
+li:nth-child(1) { animation-delay: 100ms; }
+li:nth-child(2) { animation-delay: 200ms; }
+li:nth-child(3) { animation-delay: 300ms; }
+li:nth-child(4) { animation-delay: 400ms; }
+li:nth-child(5) { animation-delay: 500ms; }
+
+/* Stat values get subtle breathing effect */
+.stat-value {
+  animation: pulse-subtle 2800ms ease-in-out infinite;
+}
+
+/* Green accent elements get persistent subtle glow */
+.label-green,
+.slide-label.label-green {
+  text-shadow: 0 0 12px rgba(175, 230, 20, 0.2);
+}
+
+/* Amber accent labels */
+.label-amber,
+.slide-label.label-amber {
+  text-shadow: 0 0 12px rgba(232, 160, 48, 0.2);
+}
+
+/* Red accent labels */
+.label-red,
+.slide-label.label-red {
+  text-shadow: 0 0 12px rgba(217, 79, 61, 0.2);
+}

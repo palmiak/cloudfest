@@ -1,0 +1,114 @@
+/* ===========================
+   CSS CUSTOM PROPERTIES
+   Design System Variables
+=========================== */
+
+:root {
+  /* Colors - Accents */
+  --color-green: #afe614;
+  --color-amber: #E8A030;
+  --color-red: #D94F3D;
+  --color-blue: #4A90D9;
+
+  /* Colors - Neutrals */
+  --color-bg: #0D0F14;
+  --color-bg-secondary: #1a1a1a;
+  --color-text-primary: #F0F0EC;
+  --color-text-secondary: rgba(255, 255, 255, 0.7);
+  --color-text-dim: rgba(255, 255, 255, 0.45);
+  --color-text-muted: rgba(255, 255, 255, 0.4);
+  --color-text-faint: rgba(255, 255, 255, 0.25);
+
+  /* Colors - Borders & Backgrounds (More subtle) */
+  --color-border: rgba(255, 255, 255, 0.08);
+  --color-border-subtle: rgba(255, 255, 255, 0.04);
+  --color-bg-subtle: rgba(255, 255, 255, 0.03);
+  --color-bg-muted: rgba(255, 255, 255, 0.04);
+
+  /* Typography - Font Families */
+  --font-serif: 'Outfit', sans-serif;
+  --font-sans: 'Outfit', sans-serif;
+  --font-mono: 'Courier New', monospace;
+
+  /* Typography - Modular Scale (Linear-inspired) */
+  --font-size-title-1: clamp(32px, 5.5vw, 72px);
+  --font-size-title-2: clamp(28px, 4.8vw, 60px);
+  --font-size-title-3: clamp(24px, 4.2vw, 52px);
+  --font-size-title-4: clamp(20px, 3.6vw, 44px);
+  --font-size-title-5: clamp(18px, 3.2vw, 36px);
+  --font-size-title-6: clamp(16px, 2.8vw, 28px);
+
+  --font-size-text-large: clamp(14px, 1.8vw, 20px);
+  --font-size-text-regular: clamp(12px, 1.5vw, 16px);
+  --font-size-text-small: clamp(10px, 1.2vw, 13px);
+  --font-size-text-mini: clamp(9px, 1.05vw, 11px);
+  --font-size-text-micro: clamp(8px, 0.95vw, 10px);
+
+  /* Legacy aliases for compatibility */
+  --font-size-label: var(--font-size-text-mini);
+  --font-size-heading: var(--font-size-title-4);
+  --font-size-heading-xl: var(--font-size-title-2);
+  --font-size-point: var(--font-size-text-regular);
+  --font-size-body: var(--font-size-text-regular);
+  --font-size-small: var(--font-size-text-small);
+  --font-size-tiny: var(--font-size-text-mini);
+  --font-size-stat: var(--font-size-title-2);
+  --font-size-code: var(--font-size-text-small);
+  --font-size-player: var(--font-size-text-regular);
+  --font-size-player-sub: var(--font-size-text-micro);
+  --font-size-tag: var(--font-size-text-micro);
+  --font-size-axis: var(--font-size-text-small);
+  --font-size-spectrum-pill: var(--font-size-text-mini);
+
+  /* Spacing - Systematic Scale */
+  --spacing-1: clamp(4px, 0.6vw, 6px);
+  --spacing-2: clamp(8px, 1vw, 12px);
+  --spacing-3: clamp(12px, 1.5vw, 16px);
+  --spacing-4: clamp(16px, 2vw, 24px);
+  --spacing-5: clamp(24px, 3vw, 32px);
+  --spacing-6: clamp(32px, 4vw, 48px);
+  --spacing-7: clamp(48px, 6vw, 64px);
+  --spacing-8: clamp(64px, 8vw, 96px);
+
+  /* Legacy aliases */
+  --spacing-xs: var(--spacing-1);
+  --spacing-sm: var(--spacing-2);
+  --spacing-md: var(--spacing-3);
+  --spacing-lg: var(--spacing-4);
+  --spacing-xl: var(--spacing-5);
+  --spacing-2xl: var(--spacing-6);
+
+  /* Spacing - Gaps */
+  --gap-points: clamp(12px, 2vw, 24px);
+  --gap-point-dot: clamp(10px, 1.2vw, 14px);
+  --gap-card: clamp(8px, 1.2vw, 14px);
+
+  /* Padding */
+  --padding-box: clamp(8px, 1.2vw, 14px) clamp(10px, 1.5vw, 16px);
+  --padding-card: clamp(8px, 1.2vw, 14px) clamp(10px, 1.5vw, 18px);
+  --padding-check: clamp(8px, 1.1vw, 13px) clamp(10px, 1.4vw, 16px);
+
+  /* Border Radius - Refined */
+  --radius-sm: 6px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-pill: 24px;
+
+  /* Opacity */
+  --opacity-dot: 0.6;
+  --opacity-point-dot: 0.7;
+
+  /* Dimensions */
+  --icon-size: clamp(28px, 3.5vw, 40px);
+  --dot-size: 4px;
+  --point-dot-size: 5px;
+  --track-dot-size: 10px;
+  --checkbox-size: clamp(16px, 2vw, 22px);
+  --checkmark-size: clamp(8px, 1vw, 12px);
+  --photo-frame-size: clamp(100px, 14vw, 170px);
+
+  /* Layout */
+  --col-left-width: 42%;
+  --col-right-width: 58%;
+  --slide-padding-x: 9%;
+}

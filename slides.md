@@ -15,6 +15,7 @@ css: unocss
 drawings:
   persist: false
 layout: cover
+routerMode: hash
 ---
 
 <style src="./styles/index.css"></style>

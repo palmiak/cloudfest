@@ -34,7 +34,7 @@ jobs:
         run: npm ci
 
       - name: Build Slidev
-        run: npm run build
+        run: npm run build -- --base /cloudfest/
 
       - name: Setup Pages
         uses: actions/configure-pages@v5

@@ -148,7 +148,7 @@ accentColor: green
 ---
 
 <div style="display: flex; align-items: center; width: 100%;">
-  <PhotoFrame src="/mypicture.jpg" alt="Maciek Palmowski" />
+  <PhotoFrame src="mypicture.jpg" alt="Maciek Palmowski" />
 
   <div style="flex: 1; display: flex; flex-direction: column; gap: clamp(14px, 2.2vw, 26px);">
 <div>
